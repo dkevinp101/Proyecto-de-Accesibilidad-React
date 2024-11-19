@@ -1,0 +1,64 @@
+:root {
+  --color-primary: #0672f3; /* Azul vibrante */
+  --color-secondary-light: #83bdfc; /* Cielo claro */
+  --color-secondary-dark: #064499; /* Azul oscuro */
+  --color-white: #ffffff;
+  --color-gray: #d1d5db;
+  --color-black: #1a1a1a;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  color: var(--color-gray);
+  background-color: var(--color-black);
+}
+
+.container {
+  margin: 20px auto;
+  max-width: 1200px;
+  text-align: center;
+  background-color: var(--color-secondary-light);
+  border: 1px solid var(--color-secondary-dark);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.card {
+  background-color: var(--color-secondary-light);
+  border: 1px solid var(--color-secondary-dark);
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  max-width: 300px;
+  min-height: 400px; /* Altura uniforme */
+  display: inline-block;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--color-primary);
+}
+
+.card-text {
+  font-size: 1rem;
+  color: var(--color-black);
+}
+
+button {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+button:hover {
+  background-color: var(--color-secondary-dark);
+  transform: scale(1.05);
+}
